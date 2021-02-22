@@ -1,5 +1,5 @@
 (setq initial-frame-alist
       '((top . 22)
         (left - 0)
-        (width . 85)
+        (width . 90)
         (height . 70)))
