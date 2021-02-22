@@ -19,8 +19,8 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 12 :weight 'normal)
-      doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 13))
+(setq doom-font (font-spec :family "Deja Vu Sans Mono" :size 12 :weight 'normal)
+      doom-variable-pitch-font (font-spec :family "Deja Vu Sans" :size 13))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -65,7 +65,7 @@
 (let ((hostdir (concat doom-private-dir *system-name*)))
   (when (file-directory-p hostdir)
     (dolist (host-el-file (directory-files hostdir t "\\.el$"))
-      (load! host-el-file))))
+      (load-file host-el-file))))
 
 ;; Don't care for typing out "yes" and "no" all the time...
 (defalias 'yes-or-no-p 'y-or-n-p)
